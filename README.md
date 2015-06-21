@@ -12,12 +12,16 @@ In a terminal, you are used to tab autocompletion. Using this directive you get 
 The directive won't work unless you supply a back-end service. An example of a PHP implementation of such a service is included. See index.php.
 
 ##installation
-bower install jc-tab-autocomplete
+    bower install jc-tab-autocomplete
 
-include these three files in your webpage:
+Include these three files in your webpage:
 
 - jcdirectives.js
 
 - autocomplete.js
 
 - tabautocomplete.js
+
+For the demo to work, install acservice as a vhost.
+http://acservice should serve index.php.
+Then go to http://acservice in your browser. If you see a usage page, jc-tab-autocomplete should work fine.
