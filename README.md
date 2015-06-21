@@ -1,6 +1,6 @@
 # jc-tab-autocomplete
 
-jcTabAutocomplete is a directive for autocompleting a POSIX path (like on a Mac) on pressing the TAB
+jcTabAutocomplete is a angular directive for autocompleting a POSIX path (like on a Mac) on pressing the TAB
 ##usage-example
  
     <div jc-tab-autocomplete ng-model="myInput"></div>

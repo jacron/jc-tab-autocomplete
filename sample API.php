@@ -2,6 +2,9 @@
 /**
  * User: orion
  * Date: 21-06-15
+ *
+ * @param $path
+ * @return array|null|string
  */
 function getAllFiles($path) {
     $files = array();
@@ -28,5 +31,4 @@ function getAllFiles($path) {
     } catch (Exception $exc) {
         return 'error in getAllFiles()';
     }
-    return null;
 }
