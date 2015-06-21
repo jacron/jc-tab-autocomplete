@@ -95,10 +95,6 @@ angular.module('jcDirectives')
                 completed = null;
 
             return auto.getFromDir(path).then(function(data){
-                console.log(invoer);
-                console.log(to_match);
-                console.log(path);
-                console.log(data);
                 if (!data || typeof data === 'string') {
                     files = [];
                 }
