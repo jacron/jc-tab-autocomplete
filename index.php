@@ -32,3 +32,28 @@ function getAllFiles($path) {
         return 'error in getAllFiles()';
     }
 }
+if (!isset($_REQUEST['req']) || !(isset($_REQUEST['path']) ||
+        $_REQUEST['req'] !== 'allfiles')) {
+    $msg = 'Usage: acservice?allfiles&path=somepath';
+}
+else {
+    $entries = getAllFiles($_REQUEST['path']);
+
+    header('Content-Type: application/x-json');
+    header('Access-Control-Allow-Origin: *');
+
+    echo json_encode($entries);
+    die;
+}
+?>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Service providing files</title>
+</head>
+<body>
+<div><?=$msg?></div>
+</body>
+</html>
+

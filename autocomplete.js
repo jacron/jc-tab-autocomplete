@@ -17,12 +17,12 @@
  */
 'use strict';
 
-angular.module('jcDirectives', [])
+angular.module('jcDirectives')
 
     .service("Autocomplete", function($http) {
         var auto = this;
 
-        var remoteForDir = 'http://zonebus?srv=dir';
+        var remoteForDir = 'http://acservice';
 
         /**
          * This API call gets all files in a dir
@@ -95,6 +95,10 @@ angular.module('jcDirectives', [])
                 completed = null;
 
             return auto.getFromDir(path).then(function(data){
+                console.log(invoer);
+                console.log(to_match);
+                console.log(path);
+                console.log(data);
                 if (!data || typeof data === 'string') {
                     files = [];
                 }

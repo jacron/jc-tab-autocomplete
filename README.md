@@ -9,7 +9,15 @@ jcTabAutocomplete is a angular directive for autocompleting a POSIX path (like o
 In a terminal, you are used to tab autocompletion. Using this directive you get the same behaviour in an input tag.
 
 ##dependencies
-The directive won't work unless you supply a back-end service. An example of a PHP implementation of such a service is included. See sample API.php.
+The directive won't work unless you supply a back-end service. An example of a PHP implementation of such a service is included. See index.php.
 
 ##installation
 bower install jc-tab-autocomplete
+
+include these three files in your webpage:
+
+- jcdirectives.js
+
+- autocomplete.js
+
+- tabautocomplete.js

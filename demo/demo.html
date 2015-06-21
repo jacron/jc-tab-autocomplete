@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Demo Tab Autocomplete</title>
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="../jcdirectives.js"></script>
+    <script src="../tabautocomplete.js"></script>
+    <script src="../autocomplete.js"></script>
+    <script src="demo.js"></script>
+    <script src="demo.controller.js"></script>
+    <script src="demo.controller.js"></script>
+</head>
+<body>
+<h1>Demo jcTabAutocomplete</h1>
+<div ng-app="DemoApp" ng-controller="DemoCtrl">
+    Input POSIX path here:
+    <input type="text" jc-tab-autocomplete="" ng-model="myInput" size="50">
+    <p>Press TAB for autocompletion</p>
+</div>
+
+</body>
+</html>
