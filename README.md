@@ -22,6 +22,12 @@ Include these three files in your webpage:
 
 - tabautocomplete.js
 
+Add the module as a dependency to your aplication, e.g.
+
+    angular.module('myApp', [
+        'jcTabAutocompleteModule'
+    ]);
+
 For the demo to work, install acservice as a vhost.
 http://acservice should serve index.php.
 Then go to http://acservice in your browser. If you see a usage page, jc-tab-autocomplete should work fine.

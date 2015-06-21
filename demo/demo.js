@@ -5,6 +5,6 @@
 'use strict';
 
 angular.module('DemoApp', [
-    'jcDirectives'
+    'jcTabAutocompleteModule'
 ])
 ;

@@ -6,7 +6,7 @@
  */
 'use strict';
 
-angular.module('jcDirectives')
+angular.module('jcTabAutocompleteModule')
 
     .directive("jcTabAutocomplete", function(Autocomplete) {
         return {

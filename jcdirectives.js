@@ -4,4 +4,4 @@
  */
 'use strict';
 
-angular.module('jcDirectives', []);
+angular.module('jcTabAutocompleteModule', []);

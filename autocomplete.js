@@ -17,7 +17,7 @@
  */
 'use strict';
 
-angular.module('jcDirectives')
+angular.module('jcTabAutocompleteModule')
 
     .service("Autocomplete", function($http) {
         var auto = this;
