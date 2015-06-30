@@ -10,7 +10,7 @@
 
 angular.module('jcTabAutocompleteModule')
 
-    .service("Autocomplete", function(Util) {
+    .service("Autocomplete", function(TabUtil) {
 
         this.selectCommonMatch = function(files, count) {
             var first = files[0].name,
@@ -93,13 +93,13 @@ angular.module('jcTabAutocompleteModule')
          * @returns {*} the input plus the completion, or null
          */
         this.autoComplete = function(input) {
-            var to_match = Util.stripBeforeSlash(input),
-                path = Util.stripAfterSlash(input),
+            var to_match = TabUtil.stripBeforeSlash(input),
+                path = TabUtil.stripAfterSlash(input),
                 files,
                 file,
                 completed = null;
 
-            return Util.getFromDir(path).then(function(data){
+            return TabUtil.getFromDir(path).then(function(data){
                 if (!data || typeof data === 'string') {
                     files = [];
                 }

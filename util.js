@@ -13,7 +13,7 @@
 
 angular.module('jcTabAutocompleteModule')
 
-    .service("Util", function($http) {
+    .service("TabUtil", function($http) {
         var remoteForDir = 'http://acservice';
 
         /**
