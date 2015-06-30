@@ -28,6 +28,10 @@ Use PHP 5.
 
 - new file: util
 
+0.4 
+
+- renamed util to tabutil
+
 ##installation
     bower install jc-tab-autocomplete
 
