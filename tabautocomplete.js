@@ -1,7 +1,9 @@
 /**
  * Tab Auto Complete
- * Emulate the behaviour of Terminal in a input field:
+ *
+ * Directive, emulating the readline behaviour of Terminal in an input field:
  * on tab, autocomplete the directory path.
+ *
  * Created by orion on 20-06-15.
  */
 'use strict';

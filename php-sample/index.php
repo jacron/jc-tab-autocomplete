@@ -3,8 +3,11 @@
  * User: orion
  * Date: 21-06-15
  *
- * @param $path
- * @return array|null|string
+ * Dependency: PHP 5.0 or later (for DirectoryIterator)
+ *
+ * @param {string} $path
+ * @return {array|null|string} All files and directories in the path,
+ * except for those starting with a dot. Sorted on name.
  */
 function getAllFiles($path) {
     $files = array();
@@ -32,6 +35,8 @@ function getAllFiles($path) {
         return 'error in getAllFiles()';
     }
 }
+
+// Start here.
 if (!isset($_REQUEST['req']) || !(isset($_REQUEST['path']) ||
         $_REQUEST['req'] !== 'allfiles')) {
     $msg = 'Usage: acservice?allfiles&path=somepath';

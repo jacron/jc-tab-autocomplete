@@ -8,5 +8,5 @@ angular.module('DemoApp')
 
     .controller("DemoCtrl", function($scope) {
         $scope.myInput = '/Volumes/Media/F';
-        $scope.version = '0.4';
+        $scope.version = '0.3';
     });
